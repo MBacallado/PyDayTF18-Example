@@ -41,6 +41,6 @@ driver.find_element_by_class_name(Element).click
 ~~~
 
 ## MirApp
-MirApp is an application that lists all viewpoints and provides the location of all of them.
+MirApp is an application that lists all viewpoints of the Canary Islands and provides the location of all of them.
 
 **Play Store Link** : [MirApp](https://play.google.com/store/apps/details?id=com.mbacallado.thirdexampleandroid)
