@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9df8a2bd-0584-4603-bd9d-fcf63f566095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/MirApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/MirApp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,50 +25,75 @@
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="25" />
+          <entry key="py" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="25" />
+          <entry key="Python" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="58" />
-          <entry key="py" value="4831" />
+          <entry key="dummy" value="64" />
+          <entry key="py" value="5573" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="58" />
-          <entry key="Python" value="4831" />
+          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="Python" value="5573" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/MirApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="629">
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
-                <marker date="1541800242009" expanded="true" signature="545:550" ph="..." />
+                <marker date="1543323697088" expanded="true" signature="528:533" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desiredCapabilities/DesiredCapabilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/Driver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <marker date="1543323482218" expanded="true" signature="192:225" ph="..." />
+                <marker date="1543323482218" expanded="true" signature="219:221" ph="..." />
+                <marker date="1543323482218" expanded="true" signature="284:289" ph="..." />
+                <marker date="1543323482218" expanded="true" signature="571:576" ph="..." />
+                <marker date="1543323482218" expanded="true" signature="653:654" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -95,9 +120,11 @@
         <option value="$PROJECT_DIR$/Configurations/Configuration.py" />
         <option value="$PROJECT_DIR$/tests/MirAppTest.py" />
         <option value="$PROJECT_DIR$/apps/MirAppAppt.py" />
-        <option value="$PROJECT_DIR$/apps/MirApp.py" />
         <option value="$PROJECT_DIR$/desiredCapabilities/DesiredCapabilities.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/utils/Elements.py" />
+        <option value="$PROJECT_DIR$/utils/Driver.py" />
+        <option value="$PROJECT_DIR$/apps/MirApp.py" />
       </list>
     </option>
   </component>
@@ -112,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,12 +149,18 @@
             <path>
               <item name="pyday" type="b2602c69:ProjectViewProjectNode" />
               <item name="pyday" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="desiredCapabilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyday" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyday" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,14 +221,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="687" y="136" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24127465" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32018209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25415283" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25415283" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,6 +258,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/desiredCapabilities/DesiredCapabilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -232,21 +272,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/MirApp.py">
+    <entry file="file://$PROJECT_DIR$/utils/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding>
-            <element signature="e#0#71#0" expanded="true" />
-            <marker date="1541800242009" expanded="true" signature="545:550" ph="..." />
+            <marker date="1543323482218" expanded="true" signature="192:225" ph="..." />
+            <marker date="1543323482218" expanded="true" signature="219:221" ph="..." />
+            <marker date="1543323482218" expanded="true" signature="284:289" ph="..." />
+            <marker date="1543323482218" expanded="true" signature="571:576" ph="..." />
+            <marker date="1543323482218" expanded="true" signature="653:654" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/apps/MirApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        <state relative-caret-position="629">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+            <marker date="1543323697088" expanded="true" signature="528:533" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

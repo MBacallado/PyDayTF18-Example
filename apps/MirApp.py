@@ -1,5 +1,5 @@
 from desiredCapabilities.DesiredCapabilities import DesiredCapabilities
-from appium.webdriver.webdriver import webdriver
+from utils.Driver import Driver
 import time
 
 class MirApp:
@@ -12,7 +12,8 @@ class MirApp:
 
     def run_app(self, hub, island, municipality, viewpoint):
         """Method that executes the methods for navigates between activities inside the app"""
-        driver = webdriver.Remote(hub, self.desired.__dict__)
+        driver = Driver(hub, self.desired.__dict__)
+        """driver = webdriver.Remote(hub, self.desired.__dict__)"""
         self.__first_activity(driver, island)
         self.__second_activity(driver, municipality)
         self.__third_activity(driver, viewpoint)
@@ -21,46 +22,35 @@ class MirApp:
     def __first_activity(self, driver, island):
         """Method that initiates the activity of the island and navigates through it"""
         time.sleep(5)
-        self.getElement(driver, "id", "islandTextView", island).click()
+        driver.get_elements_by_id("islandTextView", island).click()
         print("first activity passed")
 
     def __second_activity(self, driver, municipality):
         """Method that initiates the activity of the municipalities and navigates through it"""
         time.sleep(5)
-        self.getElement(driver, "id", "municipalityTextView", municipality).click()
+        driver.get_elements_by_id("municipalityTextView", municipality).click()
         print("second activity passed")
 
     def __third_activity(self, driver, viewpoint):
         """Method that initiates the activity of the viewpoints and navigates through it"""
         time.sleep(5)
-        driver.find_element_by_id("Más opciones").click()
-        self.getElement(driver, "id", "title", "info app").click()
+        driver.get_driver().find_element_by_id("Más opciones").click()
+        driver.get_elements_by_id("title", "info app").click()
         time.sleep(5)
-        driver.back()
+        driver.get_driver().back()
         time.sleep(2)
-        driver.find_element_by_id("Más opciones").click()
-        self.getElement(driver, "id", "title", "version app").click()
+        driver.get_driver().find_element_by_id("Más opciones").click()
+        driver.get_elements_by_id("title", "version app").click()
         time.sleep(10)
-        driver.back()
-        self.getElement(driver, "class name", "android.widget.TextView", viewpoint).click()
+        driver.get_driver().back()
+        driver.get_elements_by_class("android.widget.TextView", viewpoint).click()
         print("third activity passed")
 
     def __fourth_activity(self, driver, viewpoint):
         """Method that initiates the activity of the map and navigates through it"""
         time.sleep(5)
-        driver.find_element_by_id(viewpoint + ". ").click()
-        driver.find_element_by_id("Cómo llegar").click()
+        driver.get_driver().find_element_by_id(viewpoint + ". ").click()
+        driver.get_driver().find_element_by_id("Cómo llegar").click()
         time.sleep(5)
-        self.getElement(driver, "class name", "android.widget.TextView", "INICIAR").click()
+        driver.get_elements_by_class("android.widget.TextView", "INICIAR").click()
         print("fourth activity passed")
-
-    def getElement(self, driver, find_by, text_target, text_compare_to):
-        """Method that runs through the elements and returns the correct one."""
-        if find_by.__eq__("id"):
-            for elem in driver.find_elements_by_id(text_target):
-                if elem.text.__eq__(text_compare_to):
-                    return elem
-        else:
-            for elem in driver.find_elements_by_class_name(text_target):
-                if elem.text.__eq__(text_compare_to):
-                    return elem
