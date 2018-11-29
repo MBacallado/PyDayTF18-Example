@@ -3,9 +3,11 @@ from appium.webdriver.webdriver import webdriver
 class Driver:
 
     def __init__(self, hub, desired_dict):
+        """Constructor"""
         self.driver = webdriver.Remote(hub, desired_dict)
 
     def get_driver(self):
+        """Method that returns the webdriver"""
         return self.driver
 
     def get_elements_by_id(self, text_target, text_compare_to):
